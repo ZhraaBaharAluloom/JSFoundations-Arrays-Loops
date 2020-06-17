@@ -8,10 +8,15 @@
  * getOdds([1, 2, 3, 4, 5, 6, 7, 8, 9]) -> [1, 3, 5, 7, 9]
  * getOdds([11, 35, 52, 14, 56, 601, 777, 888, 999]) -> [11, 35, 601, 777, 999]
  */
+
 function getOdds(numbers) {
   // Your code here
+  const oddNumber=[];
+  for (i=0; i<= numbers.length-1 ; i++)
+ if (numbers[i] % 2 !== 0)
+oddNumber.push (numbers[i])
+return (oddNumber)
 }
-
 /**
  * getEvens(numbers):
  * - receives an array of numbers called `numbers`
@@ -24,8 +29,12 @@ function getOdds(numbers) {
  */
 function getEvens(numbers) {
   // Your code here
+  const evenNumber=[];
+  for (i=0; i<= numbers.length-1 ; i++)
+ if (numbers[i] % 2 === 0)
+evenNumber.push (numbers[i])
+return (evenNumber)
 }
-
 /**
  * getDuplicateCount(x, numbers):
  * - receives a number `x`, and an array of numbers called `numbers`
@@ -37,8 +46,8 @@ function getEvens(numbers) {
  */
 function getDuplicateCount(x, numbers) {
   // Your code here
-}
 
+}
 /**
  * youGottaCalmDown(s):
  * - receives a string `s`
@@ -55,6 +64,8 @@ function getDuplicateCount(x, numbers) {
  */
 function youGottaCalmDown(s) {
   // Your code here
+
 }
 
 module.exports = { getOdds, getEvens, getDuplicateCount, youGottaCalmDown };
+
